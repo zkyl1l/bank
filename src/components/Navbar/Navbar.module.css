@@ -1,0 +1,32 @@
+.header {
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.75rem;
+        background-color: #1C1C1C;
+        border-radius: 100px;
+        border: 1px #262626 solid;
+        margin: 3.125rem 0;
+        font-size: 1.125rem;
+
+        .links {
+            display: flex;
+            align-items: center;
+            gap: 1.6rem;
+        }
+
+        .auth {
+            display: flex;
+            align-items: center;
+            gap: 1.875rem;
+
+            .login {
+                background-color: #CAFF33;
+                padding: 0.875rem 1.875rem;
+                border-radius: 5.125rem;
+                color: black;
+            }
+        }
+    }
+}

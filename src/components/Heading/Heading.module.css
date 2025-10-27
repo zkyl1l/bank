@@ -1,0 +1,25 @@
+.text {
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: #E4E4E7;
+
+        > span {
+            color: #CAFF33;
+        }
+
+    }
+
+
+    .desc {
+        color: #B3B3B3;
+        margin-bottom: 3rem;
+        font-weight: 300;
+    }
+
+}
+
+.welcome__color {
+    color: #E4E4E7 !important;
+}

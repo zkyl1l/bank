@@ -1,0 +1,41 @@
+.tabs{
+    margin: 9rem 0;
+}
+
+
+.headingTabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products {
+    display: flex;
+    gap: 3rem;
+}
+
+.separator {
+    min-width: 1px;
+    background: #262626;
+}
+
+.product{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.875rem;
+    flex: 1;
+
+
+    h2{
+        color:#ffffff;
+        font-size: 1.5rem;
+    }
+
+    p{
+        color:#B3B3B3;
+        font-size: 1.125rem;
+    }
+
+}
