@@ -5,6 +5,7 @@ import {Navbar} from "@/components/Navbar/Navbar";
 import {Welcome} from "@/components/Welcome/Welcome";
 import Products from "@/components/Products/Products";
 import Cases from "@/components/Cases/Cases";
+import Features from "@/components/Features/Features";
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
             <Welcome/>
             <Products />
             <Cases />
+            <Features />
         </div>
     );
 }

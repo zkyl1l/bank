@@ -21,12 +21,34 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.tabs__root[data-orientation="vertical"] {
+    align-items: flex-start;
+
+}
+
+.tabs__panel{
+    margin-left: 1.875rem;
+}
+
 .tabs__list{
     padding: 0.825rem;
     background-color: #1C1C1C;
     border: 1px #262626 solid;
     border-radius: 5.125rem;
 
+}
+
+.tabs__list[data-orientation="vertical"] {
+    gap:1.5rem;
+    border-radius: 0.75rem;
+    padding: 3.125rem;
+    border: 0;
+    text-align: left;
+
+    &::before {
+        display: none;
+    }
 }
 .tabs__tab{
     color: #ffffff;
@@ -44,4 +66,18 @@
         background-color: #CAFF33;
         transition: 0.2s ease-in background-color;
     }
+}
+
+
+.tabs__tab[data-orientation="vertical"] {
+
+    border: 1px solid #262626;
+    padding: 1rem 2rem;
+
+    &[data-active] {
+        color: #CAFF33;
+        background-color: #1A1A1A;
+    }
+
+
 }

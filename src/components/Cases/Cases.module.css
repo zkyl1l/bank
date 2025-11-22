@@ -1,18 +1,18 @@
-
-.individuals {
+.business{
+    margin-top: 4.8125rem;
     display: flex;
     justify-content: space-between;
     gap: 6.25rem;
 
-    .text {
+    .text{
         display: flex;
         flex-direction: column;
-        gap:3.875rem;
+        gap: 3.875rem;
 
         .percent__wrapper {
             display: flex;
             justify-content: space-between;
-            gap:3.125rem;
+            gap: 3.125rem;
 
             .separator {
                 min-width: 1px;
@@ -25,7 +25,48 @@
             .percent {
 
                 p {
-                   color: #B3B3B3;
+                    color: #B3B3B3;
+                }
+
+                h3 {
+                    color: #CAFF33;
+                    font-size: 3.625rem;
+                    font-weight: 500;
+                }
+
+            }
+
+        }
+    }
+}
+
+.individuals {
+    display: flex;
+    justify-content: space-between;
+    gap: 6.25rem;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 3.875rem;
+
+        .percent__wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 3.125rem;
+
+            .separator {
+                min-width: 1px;
+                border: #262626 1px dashed;
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .percent {
+
+                p {
+                    color: #B3B3B3;
                 }
 
                 h3 {
@@ -41,7 +82,7 @@
 
 }
 
-.label{
+.label {
 
     h3 {
         font-size: 1.875rem;

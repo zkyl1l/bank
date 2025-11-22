@@ -2,7 +2,6 @@ import React from 'react';
 import s from './Cases.module.css'
 import Heading from "@/components/Heading/Heading";
 import Link from "next/link";
-import {string} from "postcss-selector-parser";
 import Image from "next/image";
 
 interface ICasesProps {
@@ -92,6 +91,40 @@ const fakeDataBusiness: IPercent[] = [
     }
 ]
 
+const fakeDataDeversesB: ICasesProps[] = [
+    {
+        id: 1,
+        icon:{
+            url: '/icons/build.svg',
+            alt: 'Building'
+        },
+        title:'Startups and Entrepreneurs',
+    },
+    {
+        id: 2,
+        icon: {
+            url: '/icons/cash.svg',
+            alt: 'Cash'
+        },
+        title: 'Cash Flow Management',
+    },
+    {
+        id: 3,
+        icon: {
+            url: 'icons/analytics.svg',
+            alt: 'Graph'
+        },
+        title: 'Business Expansion',
+    },
+    {
+        id: 4,
+        icon: {
+            url: 'icons/coin.svg',
+            alt: 'Coin'
+        },
+        title: 'Payment Solutions'
+    }]
+
 
 const Cases = () => {
     return (
@@ -129,16 +162,39 @@ const Cases = () => {
                         <Link href="#" className={s.learn}>Learn More</Link>
                     </div>
                 </div>
-                <div className={s.bussines}>
+                <div className={s.business}>
                     <div className={s.text}>
-
+                        <div className={s.label}>
+                            <h3>For Business</h3>
+                            <p> For businesses, we empower growth with working capital solutions that optimize cash flow, and our tailored financing options fuel business expansion. Whatever your financial aspirations, YourBank is committed to providing the right tools and support to achieve them</p>
+                        </div>
+                        <div className={s.percent__wrapper}>
+                            {fakeDataBusiness.map((item) => (
+                                <React.Fragment key={item.id}>
+                                    <div className={s.percent}>
+                                        <h3>{item.percentage}</h3>
+                                        <p>{item.title}</p>
+                                    </div>
+                                    {item.id != fakeDataBusiness.length && <div className={s.separator}></div>}
+                                </React.Fragment>
+                            ))}
+                        </div>
+                        <Link href="#" className={s.learn}>Learn More</Link>
                     </div>
                     <div className={s.deverses}>
-
+                        {fakeDataDeversesB.map((item) => (
+                            <div className={s.case} key={item.id}>
+                                <Image src={item.icon.url} alt={item.icon.alt} width={78} height={78}/>
+                                <h2>{item.title}</h2>
+                            </div>
+                        ))}
                     </div>
+
                 </div>
             </div>
+
         </section>
+
     );
 };
 
