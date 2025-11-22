@@ -1,0 +1,22 @@
+.blocks{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+
+}
+
+
+.block{
+    padding: 3.125rem;
+    border: 1px solid #262626;
+    border-radius: 0.875rem;
+
+    h3{
+        margin-bottom: 1.875rem;
+    }
+}
+.separator{
+    margin-bottom: 1.875rem;
+    border: 1px solid #262626;
+    min-width: 1px;
+}
